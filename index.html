@@ -18,7 +18,7 @@
 
     <div id="popup-overlay"></div>
     <div id="popup-message">
-        <h2><center>Ah, it appears you're exploring from a mobile device! </center> </h2>
+        <h2><center>Ah, it appears you're exploring from a mobile device!😅 </center> </h2>
         <p><i>Enjoy the full features of our website by switching to <b>desktop site</b>  on your browser</i></p>
        <center> <button id="close-popup">Close</button></center>
     </div>
@@ -303,7 +303,7 @@
     });
   });
 
-  // Detect if the device is a mobile device
+ 
   function isMobileDevice() {
     return /Mobi/i.test(navigator.userAgent);
   }
@@ -313,12 +313,12 @@
     var popupMessage = document.getElementById('popup-message');
     var closeButton = document.getElementById('close-popup');
 
-    // Show the popup message only on mobile devices
+    
     if (isMobileDevice()) {
       popupOverlay.style.display = 'block';
       popupMessage.style.display = 'block';
 
-      // Close the popup when clicking the close button
+
       closeButton.addEventListener('click', function() {
         popupOverlay.style.display = 'none';
         popupMessage.style.display = 'none';
